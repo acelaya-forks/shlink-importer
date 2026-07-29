@@ -45,7 +45,7 @@ class CsvParamsConsoleHelperTest extends TestCase
     public function pathToStreamThrowsExceptionWithInvalidValue(string|null $value, string $expectedMessage): void
     {
         $this->expectException(InvalidPathException::class);
-        $this->expectExceptionMessage($expectedMessage);
+        $this->expectExceptionMessageIsOrContains($expectedMessage);
 
         $this->helper->pathToStream($value);
     }

@@ -8,7 +8,7 @@ extends = "vendor/shlinkio/shlink-mago-config/mago.toml"
 [source]
 workspace = "."
 paths = ["config", "src", "test"]
-excludes = ["vendor"]
+includes = ["vendor"]
 
 [source.glob]
 literal-separator = true
@@ -18,3 +18,10 @@ no-literal-password = { exclude = ["test", "src/Sources/Shlink/ShlinkParams.php"
 no-empty-catch-clause = { exclude = ["test"] }
 no-empty-loop = { exclude = ["test"] }
 no-error-control-operator = { exclude = ["src/Sources/Csv/CsvParamsConsoleHelper.php"] }
+
+[analyzer]
+baseline = "mago-analyze-baseline.toml"
+ignore = [
+    { code = "mixed-argument", in = "test/" },
+    { code = "less-specific-nested-argument-type", in = "test/" },
+]

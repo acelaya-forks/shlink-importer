@@ -501,8 +501,11 @@ class BitlyApiImporterTest extends TestCase
             );
 
         $this->expectException(BitlyApiException::class);
-        $this->expectExceptionMessage('Request to Bitly API v4 to URL');
-        $this->expectExceptionMessage(sprintf('failed with status code "%s" and body "Error"', $statusCode));
+        $this->expectExceptionMessageIsOrContains('Request to Bitly API v4 to URL');
+        $this->expectExceptionMessageIsOrContains(sprintf(
+            'failed with status code "%s" and body "Error"',
+            $statusCode,
+        ));
 
         // Iteration needed to trigger generator code
         [

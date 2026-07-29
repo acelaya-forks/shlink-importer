@@ -40,7 +40,7 @@ class RestApiConsumerTest extends TestCase
         $this->httpClient->expects($this->once())->method('sendRequest')->with($req)->willReturn(new Response($status));
 
         $this->expectException(InvalidRequestException::class);
-        $this->expectExceptionMessage('Request to /foo/bar failed with status code ' . $status);
+        $this->expectExceptionMessageIsOrContains('Request to /foo/bar failed with status code ' . $status);
 
         $this->apiConsumer->callApi('/foo/bar');
     }

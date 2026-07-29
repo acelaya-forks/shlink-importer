@@ -13,22 +13,20 @@
     ],
     "require": {
         "php": "^8.4",
-        "laminas/laminas-servicemanager": "^4.5 || ^3.24",
+        "laminas/laminas-servicemanager": "^4.5",
         "league/csv": "^9.28",
-        "shlinkio/shlink-config": "^4.0",
+        "shlinkio/shlink-config": "^4.1",
         "shlinkio/shlink-json": "^1.3",
-        "symfony/console": "^8.0"
+        "symfony/console": "^8.1"
     },
     "require-dev": {
-        "carthage-software/mago": "^1.28",
-        "guzzlehttp/guzzle": "^7.10",
-        "phpstan/phpstan": "^2.1",
-        "phpstan/phpstan-phpunit": "^2.0",
-        "phpunit/phpunit": "^13.0",
+        "carthage-software/mago": "^1.45",
+        "guzzlehttp/guzzle": "^7.15",
+        "phpunit/phpunit": "^13.2",
         "psr/http-factory": "^1.1",
         "roave/security-advisories": "dev-master",
-        "shlinkio/shlink-mago-config": "^1.0",
-        "symfony/var-dumper": "^8.0"
+        "shlinkio/shlink-mago-config": "^1.1",
+        "symfony/var-dumper": "^8.1"
     },
     "suggest": {
         "psr/http-client": "If you want to be able to import URLs from Bit.ly, YOURLS, Kutt.it or another Shlink instance",
@@ -47,7 +45,7 @@
     "scripts": {
         "ci": [
             "@cs",
-            "@stan",
+            "@analyze",
             "@test:ci"
         ],
         "lint": "mago lint",
@@ -56,7 +54,8 @@
         "format:check": "mago format --check",
         "cs": ["@lint", "@format:check"],
         "cs:fix": ["@lint:fix", "@format"],
-        "stan": "phpstan analyse",
+        "analyze": "mago analyze",
+        "stan": "@analyze",
         "test": "phpunit --order-by=random --testdox --testdox-summary",
         "test:ci": [
             "@putenv XDEBUG_MODE=coverage",
@@ -68,10 +67,10 @@
         ]
     },
     "scripts-descriptions": {
-        "ci": "<fg=blue;options=bold>Alias for \"cs\", \"stan\" and \"test:ci\"</>",
+        "ci": "<fg=blue;options=bold>Alias for \"cs\", \"analyze\" and \"test:ci\"</>",
         "cs": "<fg=blue;options=bold>Checks coding styles</>",
         "cs:fix": "<fg=blue;options=bold>Fixes coding styles, when possible</>",
-        "stan": "<fg=blue;options=bold>Inspects code with phpstan</>",
+        "analyze": "<fg=blue;options=bold>Inspects code with mago analyze</>",
         "test": "<fg=blue;options=bold>Runs unit tests with no coverage reports</>",
         "test:ci": "<fg=blue;options=bold>Runs unit tests generating coverage reports and logs</>",
         "test:pretty": "<fg=blue;options=bold>Runs unit tests generating coverage reports in html</>"

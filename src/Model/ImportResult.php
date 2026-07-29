@@ -20,11 +20,18 @@ final readonly class ImportResult
         return new self([], []);
     }
 
+    /**
+     * @param iterable<ImportedShlinkUrl> $shlinkUrls
+     */
     public static function withShortUrls(iterable $shlinkUrls): self
     {
         return new self($shlinkUrls, []);
     }
 
+    /**
+     * @param iterable<ImportedShlinkUrl> $shlinkUrls
+     * @param iterable<ImportedShlinkOrphanVisit> $orphanVisits
+     */
     public static function withShortUrlsAndOrphanVisits(iterable $shlinkUrls, iterable $orphanVisits): self
     {
         return new self($shlinkUrls, $orphanVisits);

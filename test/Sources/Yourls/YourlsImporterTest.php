@@ -43,7 +43,7 @@ class YourlsImporterTest extends TestCase
         $this->apiConsumer->expects($this->once())->method('callApi')->willThrowException($e);
 
         $this->expectException($expectedException);
-        $this->expectExceptionMessage($expectedMessage);
+        $this->expectExceptionMessageIsOrContains($expectedMessage);
 
         // The result is a generator, so we need to iterate it in order to trigger its logic
         [...$this->importer->import(ImportSource::YOURLS->toParams())->shlinkUrls];
