@@ -1,0 +1,901 @@
+variant = "loose"
+
+[[issues]]
+file = "config/dependencies.config.php"
+code = "mixed-argument"
+message = '''Invalid argument type for argument #2 of `Laminas\ServiceManager\AbstractPluginManager::__construct`: expected `array{'abstract_factories'?: array<array-key, Laminas\ServiceManager\Factory\AbstractFactoryInterface|class-string<Laminas\ServiceManager\Factory\AbstractFactoryInterface>>, 'aliases'?: array<string, string>, 'delegators'?: !Laminas\ServiceManager\ServiceManager::DelegatorsConfiguration, 'factories'?: !Laminas\ServiceManager\ServiceManager::FactoriesConfiguration, 'initializers'?: !Laminas\ServiceManager\ServiceManager::InitializersConfiguration, 'invokables'?: array<string, class-string>, 'lazy_services'?: array{'class_map'?: array<string, class-string>, 'proxies_namespace'?: non-empty-string, 'proxies_target_dir'?: non-empty-string, 'write_proxy_files'?: bool}, 'services'?: array<string, mixed>, 'shared'?: array<string, bool>, 'shared_by_default'?: bool, ...<string, mixed>}`, but found `mixed`.'''
+count = 2
+
+[[issues]]
+file = "config/dependencies.config.php"
+code = "mixed-array-access"
+message = "Unsafe array access on type `mixed`."
+count = 4
+
+[[issues]]
+file = "src/Http/RestApiConsumer.php"
+code = "less-specific-argument"
+message = 'Argument type mismatch for argument #1 of `Psr\Http\Message\MessageInterface::withHeader`: expected `string`, but provided type `array-key` is less specific.'
+count = 2
+
+[[issues]]
+file = "src/Http/RestApiConsumer.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Psr\Http\Message\MessageInterface::withHeader`: expected `array<array-key, string>|string`, but found `mixed`.'
+count = 2
+
+[[issues]]
+file = "src/Http/RestApiConsumer.php"
+code = "mixed-assignment"
+message = "Assigning `mixed` type to a variable may lead to unexpected behavior."
+count = 1
+
+[[issues]]
+file = "src/Params/ConsoleHelper/ConsoleHelperManager.php"
+code = "incompatible-property-type"
+message = 'Property `Shlinkio\Shlink\Importer\Params\ConsoleHelper\ConsoleHelperManager::$instanceOf` has an incompatible type declaration from docblock.'
+count = 1
+
+[[issues]]
+file = "src/Params/ImportParams.php"
+code = "less-specific-argument"
+message = 'Argument type mismatch for argument #1 of `Shlinkio\Shlink\Importer\Params\ParamsUtils::invokeCallbacks`: expected `array<string, (callable(...mixed): mixed)>`, but provided type `array<array-key, mixed>` is less specific.'
+count = 1
+
+[[issues]]
+file = "src/Params/ImportParams.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Params\ImportParams::__construct`: expected `bool`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Params/ImportParams.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #3 of `Shlinkio\Shlink\Importer\Params\ImportParams::__construct`: expected `bool`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Params/ImportParams.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #4 of `Shlinkio\Shlink\Importer\Params\ImportParams::__construct`: expected `bool`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Params/ImportParams.php"
+code = "mixed-assignment"
+message = "Assigning `nonnull` type to a variable may lead to unexpected behavior."
+count = 1
+
+[[issues]]
+file = "src/Params/ImportParams.php"
+code = "mixed-return-statement"
+message = 'Could not infer a precise return type for function `Shlinkio\Shlink\Importer\Params\ImportParams::extractParamWithDefault`. Saw type `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "invalid-destructuring-source"
+message = "Invalid destructuring assignment: Cannot unpack type `mixed` into variables."
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "invalid-iterator"
+message = "The expression provided to `foreach` is not iterable. It resolved to type `mixed`, which is not iterable."
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Sources\Bitly\BitlyApiImporter::callToBitlyApi`: expected `string`, but found `truthy-mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Sources\Bitly\BitlyApiImporter::loadUrlsForGroup`: expected `string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Sources\Bitly\BitlyApiImporter::parseLink`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Sources\Bitly\BitlyApiProgressTracker::updateLastProcessedUrlDate`: expected `string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Util\DateHelper::dateFromAtom`: expected `string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "mixed-argument"
+message = "Invalid argument type for argument #1 of `array_filter`: expected `array<('K.array_filter() extends array-key), array<array-key, mixed>>`, but found `mixed`."
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "mixed-argument"
+message = "Invalid argument type for argument #1 of `ltrim`: expected `string`, but found `nonnull`."
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #3 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `array<array-key, mixed>`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #5 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `null|string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #7 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `null|string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "mixed-assignment"
+message = "Assigning `mixed` type to a variable may lead to unexpected behavior."
+count = 8
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "mixed-assignment"
+message = "Assigning `nonnull` type to a variable may lead to unexpected behavior."
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "mixed-assignment"
+message = "Assigning `truthy-mixed` type to a variable may lead to unexpected behavior."
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "redundant-condition"
+message = "Redundant condition"
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "redundant-null-coalesce"
+message = "Redundant null coalesce: left-hand side can never be `null` or undefined."
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiImporter.php"
+code = "redundant-null-coalesce"
+message = "Redundant null coalesce: left-hand side is always `null`."
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiParams.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Sources\Bitly\BitlyApiParams::__construct`: expected `string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiParams.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #6 of `Shlinkio\Shlink\Importer\Sources\Bitly\BitlyApiParams::__construct`: expected `null|string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiParams.php"
+code = "mixed-operand"
+message = "Casting `mixed` to `bool`."
+count = 4
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiProgressTracker.php"
+code = "mixed-return-statement"
+message = 'Could not infer a precise return type for function `Shlinkio\Shlink\Importer\Sources\Bitly\BitlyApiProgressTracker::createdBefore`. Saw type `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiProgressTracker.php"
+code = "mixed-return-statement"
+message = 'Could not infer a precise return type for function `Shlinkio\Shlink\Importer\Sources\Bitly\BitlyApiProgressTracker::initialGroup`. Saw type `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Bitly/BitlyApiProgressTracker.php"
+code = "possibly-false-argument"
+message = "Argument #2 of function `explode` is possibly `false`, but parameter type `string` does not accept it."
+count = 1
+
+[[issues]]
+file = "src/Sources/Csv/CsvImporter.php"
+code = "less-specific-argument"
+message = "Argument type mismatch for argument #3 of `str_replace`: expected `array<array-key, string>|string`, but provided type `array-key` is less specific."
+count = 1
+
+[[issues]]
+file = "src/Sources/Csv/CsvImporter.php"
+code = "less-specific-nested-return-statement"
+message = '''Returned type `list{nonnull, non-empty-string|null}` is less specific than the declared return type `array{0: string, 1: null|string}` for function `Shlinkio\Shlink\Importer\Sources\Csv\CsvImporter::parseShortCodeAndDomain` due to nested 'mixed'.'''
+count = 1
+
+[[issues]]
+file = "src/Sources/Csv/CsvImporter.php"
+code = "mixed-argument"
+message = "Invalid argument type for argument #1 of `parse_url`: expected `string`, but found `nonnull`."
+count = 1
+
+[[issues]]
+file = "src/Sources/Csv/CsvImporter.php"
+code = "mixed-argument"
+message = "Invalid argument type for argument #1 of `trim`: expected `string`, but found `nonnull`."
+count = 1
+
+[[issues]]
+file = "src/Sources/Csv/CsvImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Csv/CsvImporter.php"
+code = "mixed-assignment"
+message = "Assigning `mixed` type to a variable may lead to unexpected behavior."
+count = 1
+
+[[issues]]
+file = "src/Sources/Csv/CsvImporter.php"
+code = "mixed-assignment"
+message = "Assigning `nonnull` type to a variable may lead to unexpected behavior."
+count = 1
+
+[[issues]]
+file = "src/Sources/Csv/CsvImporter.php"
+code = "possibly-invalid-argument"
+message = "Possible argument type mismatch for argument #1 of `strtolower`: expected `string`, but possibly received `array<array-key, string>|string`."
+count = 1
+
+[[issues]]
+file = "src/Sources/Csv/CsvParams.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Sources\Csv\CsvParams::__construct`: expected `resource`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Csv/CsvParams.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Sources\Csv\CsvParams::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Kutt/KuttImporter.php"
+code = "mixed-argument"
+message = "Invalid argument type for argument #1 of `DateTimeImmutable::__construct`: expected `string`, but found `mixed`."
+count = 1
+
+[[issues]]
+file = "src/Sources/Kutt/KuttImporter.php"
+code = "mixed-argument"
+message = "Invalid argument type for argument #1 of `DateTimeImmutable::__construct`: expected `string`, but found `nonnull`."
+count = 1
+
+[[issues]]
+file = "src/Sources/Kutt/KuttImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Sources\Kutt\KuttImporter::mapUrls`: expected `array<array-key, mixed>`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Kutt/KuttImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Kutt/KuttImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #5 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `null|string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Kutt/KuttImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #6 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Kutt/KuttImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #7 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `null|string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Kutt/KuttImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #9 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `int|null`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Kutt/KuttImporter.php"
+code = "mixed-assignment"
+message = "Assigning `mixed` type to a variable may lead to unexpected behavior."
+count = 3
+
+[[issues]]
+file = "src/Sources/Kutt/KuttImporter.php"
+code = "mixed-operand"
+message = "Left operand in `>` comparison has `mixed` type."
+count = 1
+
+[[issues]]
+file = "src/Sources/Kutt/KuttParams.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Sources\Kutt\KuttParams::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Kutt/KuttParams.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Sources\Kutt\KuttParams::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Kutt/KuttParams.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #3 of `Shlinkio\Shlink\Importer\Sources\Kutt\KuttParams::__construct`: expected `bool`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "hidden-generator-return"
+message = 'The value returned by generator function `Shlinkio\Shlink\Importer\Sources\Shlink\ShlinkImporter::importOrphanVisits` may be inaccessible to callers.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "less-specific-nested-argument-type"
+message = 'Argument type mismatch for argument #2 of `Shlinkio\Shlink\Importer\Sources\Shlink\ShlinkMapperInterface::mapShortUrl`: expected `iterable<mixed, Shlinkio\Shlink\Importer\Model\ImportedShlinkVisit>`, but provided type `Generator<mixed, mixed, mixed, mixed>|array{}` is less specific.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Sources\Shlink\ShlinkImporter::loadRedirectRules`: expected `string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Sources\Shlink\ShlinkImporter::loadVisits`: expected `string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Sources\Shlink\ShlinkImporter::mapUrls`: expected `array<array-key, mixed>`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Sources\Shlink\ShlinkImporter::shouldContinue`: expected `array<array-key, mixed>`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "mixed-argument"
+message = "Invalid argument type for argument #1 of `ceil`: expected `float|int`, but found `mixed`."
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Sources\Shlink\ShlinkImporter::loadRedirectRules`: expected `null|string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Sources\Shlink\ShlinkImporter::loadVisits`: expected `null|string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "mixed-argument"
+message = "Invalid argument type for argument #2 of `array_map`: expected `array<('K.array_map() extends array-key), array<array-key, mixed>>`, but found `nonnull`."
+count = 3
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "mixed-array-access"
+message = "Unsafe array access on type `mixed`."
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "mixed-assignment"
+message = "Assigning `mixed` type to a variable may lead to unexpected behavior."
+count = 3
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "mixed-assignment"
+message = "Assigning `nonnull` type to a variable may lead to unexpected behavior."
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "mixed-operand"
+message = "Left operand in `<` comparison has `mixed` type."
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "mixed-operand"
+message = "Left operand in binary operation has type `mixed`."
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "mixed-operand"
+message = "Right operand in `<` comparison has `mixed` type."
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "yield-from-invalid-value-type"
+message = 'Invalid value type from `yield from`: current generator expects to yield `Shlinkio\Shlink\Importer\Model\ImportedShlinkOrphanVisit`, but the inner iterable yields `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkImporter.php"
+code = "yield-from-invalid-value-type"
+message = 'Invalid value type from `yield from`: current generator expects to yield `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl`, but the inner iterable yields `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkOrphanVisit::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkRedirectCondition::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkRedirectRule::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkVisit::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkVisitLocation::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Sources\Shlink\ShlinkMapper::mapVisitLocation`: expected `array<array-key, mixed>|null`, but found `mixed`.'
+count = 2
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Util\DateHelper::nullableDateFromAtom`: expected `null|string`, but found `mixed`.'
+count = 5
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkOrphanVisit::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkRedirectCondition::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkVisit::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkVisitLocation::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = "Invalid argument type for argument #2 of `array_map`: expected `array<('K.array_map() extends array-key), array<array-key, mixed>>`, but found `nonnull`."
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #3 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkRedirectCondition::__construct`: expected `null|string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #3 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `array<array-key, mixed>`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #3 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrlMeta::__construct`: expected `int|null`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #3 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkVisitLocation::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #4 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkOrphanVisit::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #4 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkVisitLocation::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #5 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkOrphanVisit::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #5 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `null|string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #5 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkVisitLocation::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #6 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #6 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkVisitLocation::__construct`: expected `float`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #7 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `null|string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #7 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkVisitLocation::__construct`: expected `float`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #9 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `int|null`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkMapper.php"
+code = "mixed-array-access"
+message = "Unsafe array access on type `mixed`."
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkParams.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Sources\Shlink\ShlinkParams::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Shlink/ShlinkParams.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Sources\Shlink\ShlinkParams::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsImporter.php"
+code = "less-specific-nested-argument-type"
+message = 'Argument type mismatch for argument #8 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `iterable<mixed, Shlinkio\Shlink\Importer\Model\ImportedShlinkVisit>`, but provided type `Generator<mixed, mixed, mixed, mixed>|array{}` is less specific.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkVisit::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkVisitLocation::__construct`: expected `string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Sources\Yourls\YourlsImporter::loadVisits`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkVisit::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Util\DateHelper::dateFromFormat`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Util\DateHelper::nullableDateFromFormatWithDefault`: expected `null|string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #6 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsImporter.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #7 of `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl::__construct`: expected `null|string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsImporter.php"
+code = "mixed-assignment"
+message = "Assigning `nonnull` type to a variable may lead to unexpected behavior."
+count = 2
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsImporter.php"
+code = "mixed-return-statement"
+message = 'Could not infer a precise return type for function `Shlinkio\Shlink\Importer\Sources\Yourls\YourlsImporter::callYourlsApi`. Saw type `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsImporter.php"
+code = "yield-from-invalid-value-type"
+message = 'Invalid value type from `yield from`: current generator expects to yield `Shlinkio\Shlink\Importer\Model\ImportedShlinkUrl`, but the inner iterable yields `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsMissingPluginException.php"
+code = "possibly-invalid-argument"
+message = 'Possible argument type mismatch for argument #3 of `Shlinkio\Shlink\Importer\Exception\ImportException::__construct`: expected `int`, but possibly received `int|string`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsParams.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #1 of `Shlinkio\Shlink\Importer\Sources\Yourls\YourlsParams::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsParams.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #2 of `Shlinkio\Shlink\Importer\Sources\Yourls\YourlsParams::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsParams.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #3 of `Shlinkio\Shlink\Importer\Sources\Yourls\YourlsParams::__construct`: expected `string`, but found `nonnull`.'
+count = 1
+
+[[issues]]
+file = "src/Sources/Yourls/YourlsParams.php"
+code = "mixed-argument"
+message = 'Invalid argument type for argument #5 of `Shlinkio\Shlink\Importer\Sources\Yourls\YourlsParams::__construct`: expected `null|string`, but found `mixed`.'
+count = 1
+
+[[issues]]
+file = "src/Strategy/ImporterStrategyManager.php"
+code = "incompatible-property-type"
+message = 'Property `Shlinkio\Shlink\Importer\Strategy\ImporterStrategyManager::$instanceOf` has an incompatible type declaration from docblock.'
+count = 1
+
+[[issues]]
+file = "src/Util/DateHelper.php"
+code = "falsable-return-statement"
+message = '''Function `Shlinkio\Shlink\Importer\Util\DateHelper::dateFromFormat` is declared to return `DateTimeImmutable` but possibly returns 'false' (inferred as `DateTimeImmutable&static|false`).'''
+count = 1
+
+[[issues]]
+file = "src/Util/DateHelper.php"
+code = "invalid-return-statement"
+message = 'Invalid return type for function `Shlinkio\Shlink\Importer\Util\DateHelper::dateFromFormat`: expected `DateTimeImmutable`, but found `DateTimeImmutable&static|false`.'
+count = 1
+
+[[issues]]
+file = "test/Command/ImportCommandTest.php"
+code = "mixed-assignment"
+message = "Assigning `mixed` type to a variable may lead to unexpected behavior."
+count = 2
+
+[[issues]]
+file = "test/Sources/Bitly/BitlyApiImporterTest.php"
+code = "falsable-return-statement"
+message = '''Function `ShlinkioTest\Shlink\Importer\Sources\Bitly\BitlyApiImporterTest::createDate` is declared to return `DateTimeInterface` but possibly returns 'false' (inferred as `DateTimeImmutable&static|false`).'''
+count = 1
+
+[[issues]]
+file = "test/Sources/Bitly/BitlyApiImporterTest.php"
+code = "invalid-array-element-key"
+message = "Cannot use spread operator on an iterable with key type `mixed`."
+count = 2
+
+[[issues]]
+file = "test/Sources/Bitly/BitlyApiImporterTest.php"
+code = "invalid-return-statement"
+message = 'Invalid return type for function `ShlinkioTest\Shlink\Importer\Sources\Bitly\BitlyApiImporterTest::createDate`: expected `DateTimeInterface`, but found `DateTimeImmutable&static|false`.'
+count = 1
+
+[[issues]]
+file = "test/Sources/Bitly/BitlyApiImporterTest.php"
+code = "less-specific-argument"
+message = '''Argument type mismatch for argument #1 of `Shlinkio\Shlink\Importer\Sources\ImportSource::toParamsWithCallableMap`: expected `array<string, (callable(...mixed): mixed)>`, but provided type `array{'access_token': (closure(): string('abc123')), ...}` is less specific.'''
+count = 1
+
+[[issues]]
+file = "test/Sources/Bitly/BitlyApiImporterTest.php"
+code = "redundant-comparison"
+message = "Redundant `===` comparison: left-hand side is always identical to right-hand side."
+count = 1
+
+[[issues]]
+file = "test/Sources/Bitly/BitlyApiImporterTest.php"
+code = "redundant-logical-operation"
+message = "Redundant `&&` operation: left operand is always truthy and right operand is evaluated."
+count = 1
+
+[[issues]]
+file = "test/Sources/Bitly/BitlyApiImporterTest.php"
+code = "redundant-null-coalesce"
+message = "Redundant null coalesce: left-hand side is always `null`."
+count = 1
+
+[[issues]]
+file = "test/Sources/Bitly/BitlyApiParamsTest.php"
+code = "less-specific-argument"
+message = 'Argument type mismatch for argument #1 of `Shlinkio\Shlink\Importer\Sources\ImportSource::toParamsWithCallableMap`: expected `array<string, (callable(...mixed): mixed)>`, but provided type `array<array-key, mixed>` is less specific.'
+count = 1
+
+[[issues]]
+file = "test/Sources/Csv/CsvImporterTest.php"
+code = "invalid-array-element-key"
+message = "Cannot use spread operator on an iterable with key type `mixed`."
+count = 1
+
+[[issues]]
+file = "test/Sources/Csv/CsvImporterTest.php"
+code = "mixed-return-statement"
+message = 'Could not infer a precise return type for function `ShlinkioTest\Shlink\Importer\Sources\Csv\CsvImporterTest::getDate`. Saw type `nonnull`.'
+count = 1
+
+[[issues]]
+file = "test/Sources/Kutt/KuttImporterTest.php"
+code = "invalid-array-element-key"
+message = "Cannot use spread operator on an iterable with key type `mixed`."
+count = 1
+
+[[issues]]
+file = "test/Sources/Kutt/KuttImporterTest.php"
+code = "mixed-assignment"
+message = "Assigning `mixed` type to a variable may lead to unexpected behavior."
+count = 1
+
+[[issues]]
+file = "test/Sources/Kutt/KuttImporterTest.php"
+code = "mixed-operand"
+message = "Left operand in binary operation has type `mixed`."
+count = 1
+
+[[issues]]
+file = "test/Sources/Shlink/ShlinkImporterTest.php"
+code = "invalid-array-element-key"
+message = "Cannot use spread operator on an iterable with key type `mixed`."
+count = 4
+
+[[issues]]
+file = "test/Sources/Shlink/ShlinkImporterTest.php"
+code = "invalid-operand"
+message = "Invalid type for left operand."
+count = 1
+
+[[issues]]
+file = "test/Sources/Shlink/ShlinkImporterTest.php"
+code = "mixed-assignment"
+message = "Assigning `mixed` type to a variable may lead to unexpected behavior."
+count = 2
+
+[[issues]]
+file = "test/Sources/Shlink/ShlinkImporterTest.php"
+code = "mixed-operand"
+message = "Cannot reliably increment a `mixed` operand."
+count = 1
+
+[[issues]]
+file = "test/Sources/Yourls/YourlsImporterTest.php"
+code = "invalid-array-element-key"
+message = "Cannot use spread operator on an iterable with key type `mixed`."
+count = 1
+
+[[issues]]
+file = "test/Sources/Yourls/YourlsImporterTest.php"
+code = "mixed-assignment"
+message = "Assigning `mixed` type to a variable may lead to unexpected behavior."
+count = 2
+
+[[issues]]
+file = "test/Sources/Yourls/YourlsImporterTest.php"
+code = "mixed-operand"
+message = "Invalid right operand: type `mixed` cannot be reliably used in string concatenation."
+count = 5
